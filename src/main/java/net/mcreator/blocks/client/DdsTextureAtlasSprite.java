@@ -29,15 +29,26 @@ class DdsTextureAtlasSprite extends TextureAtlasSprite {
 	public boolean load(IResourceManager manager, ResourceLocation location, Function<ResourceLocation, TextureAtlasSprite> textureGetter) {
 		ResourceLocation ddsLocation = new ResourceLocation(this.spriteLocation.getNamespace(),
 				"textures/" + this.spriteLocation.getPath() + ".dds");
-		try (IResource resource = manager.getResource(ddsLocation)) {
-			DdsImage.DecodedDds decoded = DdsImage.decode(resource.getInputStream());
-			this.setIconWidth(decoded.width);
-			this.setIconHeight(decoded.height);
-			this.clearFramesTextureData();
-			this.framesTextureData.add(decoded.mipmaps);
-			return true;
+		ResourceLocation ddsUppercaseLocation = new ResourceLocation(this.spriteLocation.getNamespace(),
+				"textures/" + this.spriteLocation.getPath() + ".DDS");
+		try {
+			IResource resource;
+			try {
+				resource = manager.getResource(ddsLocation);
+			} catch (Exception ignored) {
+				resource = manager.getResource(ddsUppercaseLocation);
+			}
+
+			try (IResource closeableResource = resource) {
+				DdsImage.DecodedDds decoded = DdsImage.decode(closeableResource.getInputStream());
+				this.setIconWidth(decoded.width);
+				this.setIconHeight(decoded.height);
+				this.clearFramesTextureData();
+				this.framesTextureData.add(decoded.mipmaps);
+				return true;
+			}
 		} catch (Exception e) {
-			LOGGER.warn("Failed to load DDS texture {}", ddsLocation, e);
+			LOGGER.warn("Failed to load DDS texture {} (or {})", ddsLocation, ddsUppercaseLocation, e);
 			return false;
 		}
 	}

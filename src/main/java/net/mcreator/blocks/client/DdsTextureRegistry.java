@@ -6,6 +6,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.crafting.CraftingHelper;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.ModContainer;
+import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
@@ -16,7 +17,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
-import java.lang.reflect.Field;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.LinkedHashSet;
@@ -63,10 +63,8 @@ public class DdsTextureRegistry {
 	@SuppressWarnings("unchecked")
 	private Map<String, TextureAtlasSprite> getRegisteredSprites(TextureMap map) {
 		try {
-			Field field = TextureMap.class.getDeclaredField("mapRegisteredSprites");
-			field.setAccessible(true);
-			return (Map<String, TextureAtlasSprite>) field.get(map);
-		} catch (ReflectiveOperationException e) {
+			return ObfuscationReflectionHelper.getPrivateValue(TextureMap.class, map, "field_110574_e", "mapRegisteredSprites");
+		} catch (Exception e) {
 			LOGGER.warn("Cannot replace registered sprites directly, fallback to setTextureEntry", e);
 			return null;
 		}
@@ -101,7 +99,8 @@ public class DdsTextureRegistry {
 		}
 
 		String relative = root.relativize(path).toString().replace('\\', '/');
-		if (!relative.endsWith(".dds")) {
+		String lower = relative.toLowerCase(java.util.Locale.ROOT);
+		if (!lower.endsWith(".dds")) {
 			return;
 		}
 
