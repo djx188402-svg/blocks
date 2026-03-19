@@ -6,7 +6,10 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.client.model.obj.OBJLoader;
 
+import net.mcreator.blocks.client.DdsTextureRegistry;
+
 public class ClientProxyBlocksMod implements IProxyBlocksMod {
+	private final DdsTextureRegistry ddsTextureRegistry = new DdsTextureRegistry();
 	@Override
 	public void init(FMLInitializationEvent event) {
 	}
@@ -14,6 +17,7 @@ public class ClientProxyBlocksMod implements IProxyBlocksMod {
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {
 		OBJLoader.INSTANCE.addDomain("blocks");
+		this.ddsTextureRegistry.register();
 	}
 
 	@Override
