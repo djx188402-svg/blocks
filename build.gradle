@@ -23,6 +23,11 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
+configurations {
+    embed
+    implementation.extendsFrom(embed)
+}
+
 minecraft {
     // The mappings can be changed at any time, and must be in the following format.
     // snapshot_YYYYMMDD   Snapshot are built nightly.
@@ -79,6 +84,9 @@ dependencies {
     // These dependencies get remapped to your current MCP mappings
     // deobf 'com.mod-buildcraft:buildcraft:6.0.8:dev'
 
+
+    embed 'com.twelvemonkeys.imageio:imageio-dds:3.12.0'
+
     // For more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
@@ -87,6 +95,10 @@ dependencies {
 
 // Example for how to get properties into the manifest for reading by the runtime..
 jar {
+    from {
+        configurations.embed.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    exclude 'META-INF/*.SF', 'META-INF/*.DSA', 'META-INF/*.RSA'
     manifest {
         attributes([
             "Specification-Title": "ctmblocks",
