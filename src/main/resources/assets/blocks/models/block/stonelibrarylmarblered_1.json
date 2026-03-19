@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "blocks:blocks/stone_library_l_marble_red",
-    "up": "blocks:blocks/stone_library_l_marble_red",
-    "north": "blocks:blocks/stone_library_l_marble_red",
-    "east": "blocks:blocks/stone_library_l_marble_red",
-    "south": "blocks:blocks/stone_library_l_marble_red",
-    "west": "blocks:blocks/stone_library_l_marble_red",
-    "particle": "blocks:blocks/stone_library_l_marble_red"
+    "down": "blocks:blocks/stone_libary_marble_red1",
+    "up": "blocks:blocks/stone_libary_marble_red1",
+    "north": "blocks:blocks/stone_libary_marble_red1",
+    "east": "blocks:blocks/stone_libary_marble_red1",
+    "south": "blocks:blocks/stone_libary_marble_red1",
+    "west": "blocks:blocks/stone_libary_marble_red1",
+    "particle": "blocks:blocks/stone_libary_marble_red1"
   }
 }
