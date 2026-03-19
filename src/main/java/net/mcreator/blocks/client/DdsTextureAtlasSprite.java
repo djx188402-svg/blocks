@@ -5,11 +5,14 @@ import net.minecraft.client.resources.IResource;
 import net.minecraft.client.resources.IResourceManager;
 import net.minecraft.util.ResourceLocation;
 
-import java.io.IOException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.Collections;
 import java.util.function.Function;
 
 class DdsTextureAtlasSprite extends TextureAtlasSprite {
+	private static final Logger LOGGER = LogManager.getLogger("blocks-dds");
 	private final ResourceLocation spriteLocation;
 
 	DdsTextureAtlasSprite(ResourceLocation spriteLocation) {
@@ -33,7 +36,8 @@ class DdsTextureAtlasSprite extends TextureAtlasSprite {
 			this.clearFramesTextureData();
 			this.framesTextureData.add(decoded.mipmaps);
 			return true;
-		} catch (IOException e) {
+		} catch (Exception e) {
+			LOGGER.warn("Failed to load DDS texture {}", ddsLocation, e);
 			return false;
 		}
 	}

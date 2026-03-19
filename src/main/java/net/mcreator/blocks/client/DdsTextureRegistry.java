@@ -8,14 +8,19 @@ import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.ModContainer;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
+import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.client.renderer.texture.TextureMap;
 import net.minecraft.util.ResourceLocation;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.io.File;
+import java.lang.reflect.Field;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.LinkedHashSet;
+import java.util.Map;
 import java.util.Set;
 
 public class DdsTextureRegistry {
@@ -38,35 +43,78 @@ public class DdsTextureRegistry {
 			discoverDdsTextures();
 		}
 
-		TextureMap map = event.getMap();
+		replaceSprites(event.getMap());
+	}
+
+	private void replaceSprites(TextureMap map) {
+		Map<String, TextureAtlasSprite> registered = getRegisteredSprites(map);
+		if (registered == null) {
+			for (ResourceLocation sprite : this.ddsSprites) {
+				map.setTextureEntry(new DdsTextureAtlasSprite(sprite));
+			}
+			return;
+		}
+
 		for (ResourceLocation sprite : this.ddsSprites) {
-			map.setTextureEntry(new DdsTextureAtlasSprite(sprite));
+			registered.put(sprite.toString(), new DdsTextureAtlasSprite(sprite));
+		}
+	}
+
+	@SuppressWarnings("unchecked")
+	private Map<String, TextureAtlasSprite> getRegisteredSprites(TextureMap map) {
+		try {
+			Field field = TextureMap.class.getDeclaredField("mapRegisteredSprites");
+			field.setAccessible(true);
+			return (Map<String, TextureAtlasSprite>) field.get(map);
+		} catch (ReflectiveOperationException e) {
+			LOGGER.warn("Cannot replace registered sprites directly, fallback to setTextureEntry", e);
+			return null;
 		}
 	}
 
 	private void discoverDdsTextures() {
 		ModContainer modContainer = Loader.instance().getIndexedModList().get(BlocksMod.MODID);
-		if (modContainer == null) {
-			LOGGER.warn("Cannot scan DDS textures: mod container not found");
-			return;
+		if (modContainer != null) {
+			CraftingHelper.findFiles(modContainer, "assets/" + BlocksMod.MODID + "/textures", null, this::collectDds, true, true);
 		}
 
-		CraftingHelper.findFiles(modContainer, "assets/" + BlocksMod.MODID + "/textures", null, this::collectDds, true, true);
+		discoverFromSourceTree();
 		LOGGER.info("Registered {} DDS texture(s)", Integer.valueOf(this.ddsSprites.size()));
 	}
 
-	private Boolean collectDds(Path root, Path path) {
-		if (path == null || !java.nio.file.Files.isRegularFile(path)) {
-			return Boolean.TRUE;
+	private void discoverFromSourceTree() {
+		Path sourceRoot = new File("src/main/resources/assets/" + BlocksMod.MODID + "/textures").toPath();
+		if (!Files.isDirectory(sourceRoot)) {
+			return;
+		}
+
+		try {
+			Files.walk(sourceRoot).forEach(path -> collectFromPath(sourceRoot, path));
+		} catch (Exception e) {
+			LOGGER.warn("Failed to scan DDS textures in source tree", e);
+		}
+	}
+
+	private void collectFromPath(Path root, Path path) {
+		if (!Files.isRegularFile(path)) {
+			return;
 		}
 
 		String relative = root.relativize(path).toString().replace('\\', '/');
 		if (!relative.endsWith(".dds")) {
-			return Boolean.TRUE;
+			return;
 		}
 
 		String texturePath = relative.substring(0, relative.length() - 4);
 		this.ddsSprites.add(new ResourceLocation(BlocksMod.MODID, texturePath));
+	}
+
+	private Boolean collectDds(Path root, Path path) {
+		if (path == null || !Files.isRegularFile(path)) {
+			return Boolean.TRUE;
+		}
+
+		collectFromPath(root, path);
 		return Boolean.TRUE;
 	}
 }

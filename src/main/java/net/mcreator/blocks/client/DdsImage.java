@@ -54,6 +54,12 @@ final class DdsImage {
 					ensureRange(bytes, offset, dataSize);
 					mipmaps[mip] = decodeDxt1(bytes, offset, mipWidth, mipHeight);
 					offset += dataSize;
+				} else if (fourCC == fourCC("DXT3")) {
+					int blockSize = 16;
+					int dataSize = ((mipWidth + 3) / 4) * ((mipHeight + 3) / 4) * blockSize;
+					ensureRange(bytes, offset, dataSize);
+					mipmaps[mip] = decodeDxt3(bytes, offset, mipWidth, mipHeight);
+					offset += dataSize;
 				} else if (fourCC == fourCC("DXT5")) {
 					int blockSize = 16;
 					int dataSize = ((mipWidth + 3) / 4) * ((mipHeight + 3) / 4) * blockSize;
@@ -128,6 +134,43 @@ final class DdsImage {
 						int y = by * 4 + py;
 						if (x < width && y < height) {
 							pixels[y * width + x] = palette[code];
+						}
+					}
+				}
+			}
+		}
+		return pixels;
+	}
+
+
+	private static int[] decodeDxt3(byte[] bytes, int offset, int width, int height) {
+		int[] pixels = new int[width * height];
+		int blocksWide = (width + 3) / 4;
+		int blocksHigh = (height + 3) / 4;
+
+		for (int by = 0; by < blocksHigh; by++) {
+			for (int bx = 0; bx < blocksWide; bx++) {
+				long alphaBits = 0;
+				for (int i = 0; i < 8; i++) {
+					alphaBits |= (long) (bytes[offset + i] & 0xFF) << (8 * i);
+				}
+				int c0 = readU16(bytes, offset + 8);
+				int c1 = readU16(bytes, offset + 10);
+				int codes = readU32(bytes, offset + 12);
+				offset += 16;
+
+				int[] colorPalette = decodeColorPaletteDxt3Or5(c0, c1);
+				for (int py = 0; py < 4; py++) {
+					for (int px = 0; px < 4; px++) {
+						int pixelIndex = 4 * py + px;
+						int alpha = (int) ((alphaBits >>> (4 * pixelIndex)) & 0xF);
+						alpha = (alpha << 4) | alpha;
+						int colorCode = (codes >>> (2 * pixelIndex)) & 0x3;
+						int rgb = colorPalette[colorCode] & 0x00FFFFFF;
+						int x = bx * 4 + px;
+						int y = by * 4 + py;
+						if (x < width && y < height) {
+							pixels[y * width + x] = (alpha << 24) | rgb;
 						}
 					}
 				}
