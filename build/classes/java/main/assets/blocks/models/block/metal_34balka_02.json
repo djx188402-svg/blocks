@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/metal34_balka_02",
+    "up": "blocks:blocks/metal34_balka_02",
+    "north": "blocks:blocks/metal34_balka_02",
+    "east": "blocks:blocks/metal34_balka_02",
+    "south": "blocks:blocks/metal34_balka_02",
+    "west": "blocks:blocks/metal34_balka_02",
+    "particle": "blocks:blocks/metal34_balka_02"
+  }
+}

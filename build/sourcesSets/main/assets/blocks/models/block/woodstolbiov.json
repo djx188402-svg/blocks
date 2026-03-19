@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/wood_stolb_iov",
+    "up": "blocks:blocks/wood_stolb_iov",
+    "north": "blocks:blocks/wood_stolb_iov",
+    "east": "blocks:blocks/wood_stolb_iov",
+    "south": "blocks:blocks/wood_stolb_iov",
+    "west": "blocks:blocks/wood_stolb_iov",
+    "particle": "blocks:blocks/wood_stolb_iov"
+  }
+}

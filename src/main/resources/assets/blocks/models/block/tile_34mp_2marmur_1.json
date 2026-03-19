@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/tile34_mp2marmur",
+    "up": "blocks:blocks/tile34_mp2marmur",
+    "north": "blocks:blocks/tile34_mp2marmur",
+    "east": "blocks:blocks/tile34_mp2marmur",
+    "south": "blocks:blocks/tile34_mp2marmur",
+    "west": "blocks:blocks/tile34_mp2marmur",
+    "particle": "blocks:blocks/tile34_mp2marmur"
+  }
+}

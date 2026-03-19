@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/metal_luch_kraska",
+    "up": "blocks:blocks/metal_luch_kraska",
+    "north": "blocks:blocks/metal_luch_kraska",
+    "east": "blocks:blocks/metal_luch_kraska",
+    "south": "blocks:blocks/metal_luch_kraska",
+    "west": "blocks:blocks/metal_luch_kraska",
+    "particle": "blocks:blocks/metal_luch_kraska"
+  }
+}

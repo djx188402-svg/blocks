@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/metal_shifer",
+    "up": "blocks:blocks/metal_shifer",
+    "north": "blocks:blocks/metal_shifer",
+    "east": "blocks:blocks/metal_shifer",
+    "south": "blocks:blocks/metal_shifer",
+    "west": "blocks:blocks/metal_shifer",
+    "particle": "blocks:blocks/metal_shifer"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/metal_rustmixed",
+    "up": "blocks:blocks/metal_rustmixed",
+    "north": "blocks:blocks/metal_rustmixed",
+    "east": "blocks:blocks/metal_rustmixed",
+    "south": "blocks:blocks/metal_rustmixed",
+    "west": "blocks:blocks/metal_rustmixed",
+    "particle": "blocks:blocks/metal_rustmixed"
+  }
+}

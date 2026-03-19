@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/wall34_cornice",
+    "up": "blocks:blocks/wall34_cornice",
+    "north": "blocks:blocks/wall34_cornice",
+    "east": "blocks:blocks/wall34_cornice",
+    "south": "blocks:blocks/wall34_cornice",
+    "west": "blocks:blocks/wall34_cornice",
+    "particle": "blocks:blocks/wall34_cornice"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/metal_corr_dsc",
+    "up": "blocks:blocks/metal_corr_dsc",
+    "north": "blocks:blocks/metal_corr_dsc",
+    "east": "blocks:blocks/metal_corr_dsc",
+    "south": "blocks:blocks/metal_corr_dsc",
+    "west": "blocks:blocks/metal_corr_dsc",
+    "particle": "blocks:blocks/metal_corr_dsc"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/tile34_revol_floor",
+    "up": "blocks:blocks/tile34_revol_floor",
+    "north": "blocks:blocks/tile34_revol_floor",
+    "east": "blocks:blocks/tile34_revol_floor",
+    "south": "blocks:blocks/tile34_revol_floor",
+    "west": "blocks:blocks/tile34_revol_floor",
+    "particle": "blocks:blocks/tile34_revol_floor"
+  }
+}

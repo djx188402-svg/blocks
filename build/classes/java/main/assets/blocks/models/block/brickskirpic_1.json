@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/bricks_kirpic_1",
+    "up": "blocks:blocks/bricks_kirpic_1",
+    "north": "blocks:blocks/bricks_kirpic_1",
+    "east": "blocks:blocks/bricks_kirpic_1",
+    "south": "blocks:blocks/bricks_kirpic_1",
+    "west": "blocks:blocks/bricks_kirpic_1",
+    "particle": "blocks:blocks/bricks_kirpic_1"
+  }
+}

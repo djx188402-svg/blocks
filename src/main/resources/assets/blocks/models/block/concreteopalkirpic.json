@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/concrete_opal_kirpic",
+    "up": "blocks:blocks/concrete_opal_kirpic",
+    "north": "blocks:blocks/concrete_opal_kirpic",
+    "east": "blocks:blocks/concrete_opal_kirpic",
+    "south": "blocks:blocks/concrete_opal_kirpic",
+    "west": "blocks:blocks/concrete_opal_kirpic",
+    "particle": "blocks:blocks/concrete_opal_kirpic"
+  }
+}

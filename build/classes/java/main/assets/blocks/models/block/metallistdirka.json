@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/metal_list_dirka",
+    "up": "blocks:blocks/metal_list_dirka",
+    "north": "blocks:blocks/metal_list_dirka",
+    "east": "blocks:blocks/metal_list_dirka",
+    "south": "blocks:blocks/metal_list_dirka",
+    "west": "blocks:blocks/metal_list_dirka",
+    "particle": "blocks:blocks/metal_list_dirka"
+  }
+}

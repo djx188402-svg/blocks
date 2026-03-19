@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/wall_stucaturka_pink_dsc",
+    "up": "blocks:blocks/wall_stucaturka_pink_dsc",
+    "north": "blocks:blocks/wall_stucaturka_pink_dsc",
+    "east": "blocks:blocks/wall_stucaturka_pink_dsc",
+    "south": "blocks:blocks/wall_stucaturka_pink_dsc",
+    "west": "blocks:blocks/wall_stucaturka_pink_dsc",
+    "particle": "blocks:blocks/wall_stucaturka_pink_dsc"
+  }
+}

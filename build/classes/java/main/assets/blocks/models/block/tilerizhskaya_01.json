@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/tile_rizhskaya_01",
+    "up": "blocks:blocks/tile_rizhskaya_01",
+    "north": "blocks:blocks/tile_rizhskaya_01",
+    "east": "blocks:blocks/tile_rizhskaya_01",
+    "south": "blocks:blocks/tile_rizhskaya_01",
+    "west": "blocks:blocks/tile_rizhskaya_01",
+    "particle": "blocks:blocks/tile_rizhskaya_01"
+  }
+}

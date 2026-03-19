@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/stucco34_potolok_oblezly",
+    "up": "blocks:blocks/stucco34_potolok_oblezly",
+    "north": "blocks:blocks/stucco34_potolok_oblezly",
+    "east": "blocks:blocks/stucco34_potolok_oblezly",
+    "south": "blocks:blocks/stucco34_potolok_oblezly",
+    "west": "blocks:blocks/stucco34_potolok_oblezly",
+    "particle": "blocks:blocks/stucco34_potolok_oblezly"
+  }
+}

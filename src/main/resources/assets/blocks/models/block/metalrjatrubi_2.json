@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/metal_rja_trubi2",
+    "up": "blocks:blocks/metal_rja_trubi2",
+    "north": "blocks:blocks/metal_rja_trubi2",
+    "east": "blocks:blocks/metal_rja_trubi2",
+    "south": "blocks:blocks/metal_rja_trubi2",
+    "west": "blocks:blocks/metal_rja_trubi2",
+    "particle": "blocks:blocks/metal_rja_trubi2"
+  }
+}

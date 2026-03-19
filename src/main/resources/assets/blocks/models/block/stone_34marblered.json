@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/stone34_marble_red",
+    "up": "blocks:blocks/stone34_marble_red",
+    "north": "blocks:blocks/stone34_marble_red",
+    "east": "blocks:blocks/stone34_marble_red",
+    "south": "blocks:blocks/stone34_marble_red",
+    "west": "blocks:blocks/stone34_marble_red",
+    "particle": "blocks:blocks/stone34_marble_red"
+  }
+}

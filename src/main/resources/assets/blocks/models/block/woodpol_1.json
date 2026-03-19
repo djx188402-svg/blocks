@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/wood_pol",
+    "up": "blocks:blocks/wood_pol",
+    "north": "blocks:blocks/wood_pol",
+    "east": "blocks:blocks/wood_pol",
+    "south": "blocks:blocks/wood_pol",
+    "west": "blocks:blocks/wood_pol",
+    "particle": "blocks:blocks/wood_pol"
+  }
+}

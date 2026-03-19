@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/tile34_marble01_tretyakovskaya",
+    "up": "blocks:blocks/tile34_marble01_tretyakovskaya",
+    "north": "blocks:blocks/tile34_marble01_tretyakovskaya",
+    "east": "blocks:blocks/tile34_marble01_tretyakovskaya",
+    "south": "blocks:blocks/tile34_marble01_tretyakovskaya",
+    "west": "blocks:blocks/tile34_marble01_tretyakovskaya",
+    "particle": "blocks:blocks/tile34_marble01_tretyakovskaya"
+  }
+}

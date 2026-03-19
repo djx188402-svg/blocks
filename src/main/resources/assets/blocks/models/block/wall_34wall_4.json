@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/wall34_wall_3",
+    "up": "blocks:blocks/wall34_wall_3",
+    "north": "blocks:blocks/wall34_wall_3",
+    "east": "blocks:blocks/wall34_wall_3",
+    "south": "blocks:blocks/wall34_wall_3",
+    "west": "blocks:blocks/wall34_wall_3",
+    "particle": "blocks:blocks/wall34_wall_3"
+  }
+}

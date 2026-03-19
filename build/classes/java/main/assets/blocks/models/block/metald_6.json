@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/metal_d6",
+    "up": "blocks:blocks/metal_d6",
+    "north": "blocks:blocks/metal_d6",
+    "east": "blocks:blocks/metal_d6",
+    "south": "blocks:blocks/metal_d6",
+    "west": "blocks:blocks/metal_d6",
+    "particle": "blocks:blocks/metal_d6"
+  }
+}

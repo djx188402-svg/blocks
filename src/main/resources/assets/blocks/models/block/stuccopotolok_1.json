@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/stucco_potolok1",
+    "up": "blocks:blocks/stucco_potolok1",
+    "north": "blocks:blocks/stucco_potolok1",
+    "east": "blocks:blocks/stucco_potolok1",
+    "south": "blocks:blocks/stucco_potolok1",
+    "west": "blocks:blocks/stucco_potolok1",
+    "particle": "blocks:blocks/stucco_potolok1"
+  }
+}

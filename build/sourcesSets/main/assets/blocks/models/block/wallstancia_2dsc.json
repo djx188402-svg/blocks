@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/wall_stancia2_dsc",
+    "up": "blocks:blocks/wall_stancia2_dsc",
+    "north": "blocks:blocks/wall_stancia2_dsc",
+    "east": "blocks:blocks/wall_stancia2_dsc",
+    "south": "blocks:blocks/wall_stancia2_dsc",
+    "west": "blocks:blocks/wall_stancia2_dsc",
+    "particle": "blocks:blocks/wall_stancia2_dsc"
+  }
+}

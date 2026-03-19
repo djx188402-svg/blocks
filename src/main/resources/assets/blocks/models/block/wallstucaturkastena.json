@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/wall_stucaturka_stena",
+    "up": "blocks:blocks/wall_stucaturka_stena",
+    "north": "blocks:blocks/wall_stucaturka_stena",
+    "east": "blocks:blocks/wall_stucaturka_stena",
+    "south": "blocks:blocks/wall_stucaturka_stena",
+    "west": "blocks:blocks/wall_stucaturka_stena",
+    "particle": "blocks:blocks/wall_stucaturka_stena"
+  }
+}

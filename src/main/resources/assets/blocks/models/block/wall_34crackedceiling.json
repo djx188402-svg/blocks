@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/wall34_crackedceiling",
+    "up": "blocks:blocks/wall34_crackedceiling",
+    "north": "blocks:blocks/wall34_crackedceiling",
+    "east": "blocks:blocks/wall34_crackedceiling",
+    "south": "blocks:blocks/wall34_crackedceiling",
+    "west": "blocks:blocks/wall34_crackedceiling",
+    "particle": "blocks:blocks/wall34_crackedceiling"
+  }
+}

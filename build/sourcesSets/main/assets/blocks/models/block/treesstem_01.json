@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/trees_stem_01",
+    "up": "blocks:blocks/trees_stem_01",
+    "north": "blocks:blocks/trees_stem_01",
+    "east": "blocks:blocks/trees_stem_01",
+    "south": "blocks:blocks/trees_stem_01",
+    "west": "blocks:blocks/trees_stem_01",
+    "particle": "blocks:blocks/trees_stem_01"
+  }
+}

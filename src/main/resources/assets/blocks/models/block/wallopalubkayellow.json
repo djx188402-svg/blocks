@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/wall_opalubka_yellow",
+    "up": "blocks:blocks/wall_opalubka_yellow",
+    "north": "blocks:blocks/wall_opalubka_yellow",
+    "east": "blocks:blocks/wall_opalubka_yellow",
+    "south": "blocks:blocks/wall_opalubka_yellow",
+    "west": "blocks:blocks/wall_opalubka_yellow",
+    "particle": "blocks:blocks/wall_opalubka_yellow"
+  }
+}

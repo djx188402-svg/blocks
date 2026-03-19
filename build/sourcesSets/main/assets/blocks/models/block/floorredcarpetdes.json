@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/floor_redcarpet_des",
+    "up": "blocks:blocks/floor_redcarpet_des",
+    "north": "blocks:blocks/floor_redcarpet_des",
+    "east": "blocks:blocks/floor_redcarpet_des",
+    "south": "blocks:blocks/floor_redcarpet_des",
+    "west": "blocks:blocks/floor_redcarpet_des",
+    "particle": "blocks:blocks/floor_redcarpet_des"
+  }
+}

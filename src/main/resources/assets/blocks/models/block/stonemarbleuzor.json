@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/stone_marble_uzor",
+    "up": "blocks:blocks/stone_marble_uzor",
+    "north": "blocks:blocks/stone_marble_uzor",
+    "east": "blocks:blocks/stone_marble_uzor",
+    "south": "blocks:blocks/stone_marble_uzor",
+    "west": "blocks:blocks/stone_marble_uzor",
+    "particle": "blocks:blocks/stone_marble_uzor"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/concrete_beton_floor",
+    "up": "blocks:blocks/concrete_beton_floor",
+    "north": "blocks:blocks/concrete_beton_floor",
+    "east": "blocks:blocks/concrete_beton_floor",
+    "south": "blocks:blocks/concrete_beton_floor",
+    "west": "blocks:blocks/concrete_beton_floor",
+    "particle": "blocks:blocks/concrete_beton_floor"
+  }
+}

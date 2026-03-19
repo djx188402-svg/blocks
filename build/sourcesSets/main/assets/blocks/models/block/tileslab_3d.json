@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/tile_slab_3d",
+    "up": "blocks:blocks/tile_slab_3d",
+    "north": "blocks:blocks/tile_slab_3d",
+    "east": "blocks:blocks/tile_slab_3d",
+    "south": "blocks:blocks/tile_slab_3d",
+    "west": "blocks:blocks/tile_slab_3d",
+    "particle": "blocks:blocks/tile_slab_3d"
+  }
+}

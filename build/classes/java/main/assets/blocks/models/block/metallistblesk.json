@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/metal_list_blesk",
+    "up": "blocks:blocks/metal_list_blesk",
+    "north": "blocks:blocks/metal_list_blesk",
+    "east": "blocks:blocks/metal_list_blesk",
+    "south": "blocks:blocks/metal_list_blesk",
+    "west": "blocks:blocks/metal_list_blesk",
+    "particle": "blocks:blocks/metal_list_blesk"
+  }
+}

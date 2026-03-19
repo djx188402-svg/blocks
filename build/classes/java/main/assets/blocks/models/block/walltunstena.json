@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/wall_tunstena",
+    "up": "blocks:blocks/wall_tunstena",
+    "north": "blocks:blocks/wall_tunstena",
+    "east": "blocks:blocks/wall_tunstena",
+    "south": "blocks:blocks/wall_tunstena",
+    "west": "blocks:blocks/wall_tunstena",
+    "particle": "blocks:blocks/wall_tunstena"
+  }
+}

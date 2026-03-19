@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/tile_plit_black",
+    "up": "blocks:blocks/tile_plit_black",
+    "north": "blocks:blocks/tile_plit_black",
+    "east": "blocks:blocks/tile_plit_black",
+    "south": "blocks:blocks/tile_plit_black",
+    "west": "blocks:blocks/tile_plit_black",
+    "particle": "blocks:blocks/tile_plit_black"
+  }
+}

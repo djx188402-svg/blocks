@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/tile_library_l_plita_02",
+    "up": "blocks:blocks/tile_library_l_plita_02",
+    "north": "blocks:blocks/tile_library_l_plita_02",
+    "east": "blocks:blocks/tile_library_l_plita_02",
+    "south": "blocks:blocks/tile_library_l_plita_02",
+    "west": "blocks:blocks/tile_library_l_plita_02",
+    "particle": "blocks:blocks/tile_library_l_plita_02"
+  }
+}

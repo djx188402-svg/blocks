@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/stucco_potol_podval",
+    "up": "blocks:blocks/stucco_potol_podval",
+    "north": "blocks:blocks/stucco_potol_podval",
+    "east": "blocks:blocks/stucco_potol_podval",
+    "south": "blocks:blocks/stucco_potol_podval",
+    "west": "blocks:blocks/stucco_potol_podval",
+    "particle": "blocks:blocks/stucco_potol_podval"
+  }
+}

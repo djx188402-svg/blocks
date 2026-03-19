@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/tile_library_sm_dsc",
+    "up": "blocks:blocks/tile_library_sm_dsc",
+    "north": "blocks:blocks/tile_library_sm_dsc",
+    "east": "blocks:blocks/tile_library_sm_dsc",
+    "south": "blocks:blocks/tile_library_sm_dsc",
+    "west": "blocks:blocks/tile_library_sm_dsc",
+    "particle": "blocks:blocks/tile_library_sm_dsc"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/trees34_trees_bark_01",
+    "up": "blocks:blocks/trees34_trees_bark_01",
+    "north": "blocks:blocks/trees34_trees_bark_01",
+    "east": "blocks:blocks/trees34_trees_bark_01",
+    "south": "blocks:blocks/trees34_trees_bark_01",
+    "west": "blocks:blocks/trees34_trees_bark_01",
+    "particle": "blocks:blocks/trees34_trees_bark_01"
+  }
+}

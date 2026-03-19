@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/wall_kraskirpich_burn",
+    "up": "blocks:blocks/wall_kraskirpich_burn",
+    "north": "blocks:blocks/wall_kraskirpich_burn",
+    "east": "blocks:blocks/wall_kraskirpich_burn",
+    "south": "blocks:blocks/wall_kraskirpich_burn",
+    "west": "blocks:blocks/wall_kraskirpich_burn",
+    "particle": "blocks:blocks/wall_kraskirpich_burn"
+  }
+}

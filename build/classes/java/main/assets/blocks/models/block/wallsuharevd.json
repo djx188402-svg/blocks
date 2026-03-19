@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/wall_suharev_d",
+    "up": "blocks:blocks/wall_suharev_d",
+    "north": "blocks:blocks/wall_suharev_d",
+    "east": "blocks:blocks/wall_suharev_d",
+    "south": "blocks:blocks/wall_suharev_d",
+    "west": "blocks:blocks/wall_suharev_d",
+    "particle": "blocks:blocks/wall_suharev_d"
+  }
+}

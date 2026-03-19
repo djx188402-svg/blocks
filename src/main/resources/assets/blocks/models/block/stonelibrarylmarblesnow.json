@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/stone_library_l_marble_snow",
+    "up": "blocks:blocks/stone_library_l_marble_snow",
+    "north": "blocks:blocks/stone_library_l_marble_snow",
+    "east": "blocks:blocks/stone_library_l_marble_snow",
+    "south": "blocks:blocks/stone_library_l_marble_snow",
+    "west": "blocks:blocks/stone_library_l_marble_snow",
+    "particle": "blocks:blocks/stone_library_l_marble_snow"
+  }
+}

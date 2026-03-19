@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/tile_mramor",
+    "up": "blocks:blocks/tile_mramor",
+    "north": "blocks:blocks/tile_mramor",
+    "east": "blocks:blocks/tile_mramor",
+    "south": "blocks:blocks/tile_mramor",
+    "west": "blocks:blocks/tile_mramor",
+    "particle": "blocks:blocks/tile_mramor"
+  }
+}

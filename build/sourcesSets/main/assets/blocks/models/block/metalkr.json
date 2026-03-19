@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/metal_kr",
+    "up": "blocks:blocks/metal_kr",
+    "north": "blocks:blocks/metal_kr",
+    "east": "blocks:blocks/metal_kr",
+    "south": "blocks:blocks/metal_kr",
+    "west": "blocks:blocks/metal_kr",
+    "particle": "blocks:blocks/metal_kr"
+  }
+}

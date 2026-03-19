@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/wall_wall_burnt",
+    "up": "blocks:blocks/wall_wall_burnt",
+    "north": "blocks:blocks/wall_wall_burnt",
+    "east": "blocks:blocks/wall_wall_burnt",
+    "south": "blocks:blocks/wall_wall_burnt",
+    "west": "blocks:blocks/wall_wall_burnt",
+    "particle": "blocks:blocks/wall_wall_burnt"
+  }
+}

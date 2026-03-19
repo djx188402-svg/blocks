@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/stone_stena_marbl_dsc",
+    "up": "blocks:blocks/stone_stena_marbl_dsc",
+    "north": "blocks:blocks/stone_stena_marbl_dsc",
+    "east": "blocks:blocks/stone_stena_marbl_dsc",
+    "south": "blocks:blocks/stone_stena_marbl_dsc",
+    "west": "blocks:blocks/stone_stena_marbl_dsc",
+    "particle": "blocks:blocks/stone_stena_marbl_dsc"
+  }
+}

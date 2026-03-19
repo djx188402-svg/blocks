@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/tile34_plitka_b",
+    "up": "blocks:blocks/tile34_plitka_b",
+    "north": "blocks:blocks/tile34_plitka_b",
+    "east": "blocks:blocks/tile34_plitka_b",
+    "south": "blocks:blocks/tile34_plitka_b",
+    "west": "blocks:blocks/tile34_plitka_b",
+    "particle": "blocks:blocks/tile34_plitka_b"
+  }
+}

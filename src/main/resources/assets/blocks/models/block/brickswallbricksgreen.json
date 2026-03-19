@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/bricks_wallbricks_green",
+    "up": "blocks:blocks/bricks_wallbricks_green",
+    "north": "blocks:blocks/bricks_wallbricks_green",
+    "east": "blocks:blocks/bricks_wallbricks_green",
+    "south": "blocks:blocks/bricks_wallbricks_green",
+    "west": "blocks:blocks/bricks_wallbricks_green",
+    "particle": "blocks:blocks/bricks_wallbricks_green"
+  }
+}

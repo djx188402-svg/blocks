@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/metal_roof",
+    "up": "blocks:blocks/metal_roof",
+    "north": "blocks:blocks/metal_roof",
+    "east": "blocks:blocks/metal_roof",
+    "south": "blocks:blocks/metal_roof",
+    "west": "blocks:blocks/metal_roof",
+    "particle": "blocks:blocks/metal_roof"
+  }
+}

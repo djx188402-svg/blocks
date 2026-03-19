@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/wall_kraskirpich_s",
+    "up": "blocks:blocks/wall_kraskirpich_s",
+    "north": "blocks:blocks/wall_kraskirpich_s",
+    "east": "blocks:blocks/wall_kraskirpich_s",
+    "south": "blocks:blocks/wall_kraskirpich_s",
+    "west": "blocks:blocks/wall_kraskirpich_s",
+    "particle": "blocks:blocks/wall_kraskirpich_s"
+  }
+}

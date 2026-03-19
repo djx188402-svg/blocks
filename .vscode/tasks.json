@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Gradle: tasks (Java 8)",
+      "type": "shell",
+      "command": "gradle tasks --all",
+      "options": {
+        "env": {
+          "JAVA_HOME": "${env:JAVA8_HOME}",
+          "PATH": "${env:JAVA8_HOME}/bin:${env:PATH}"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Gradle: build (Java 8)",
+      "type": "shell",
+      "command": "gradle build",
+      "options": {
+        "env": {
+          "JAVA_HOME": "${env:JAVA8_HOME}",
+          "PATH": "${env:JAVA8_HOME}/bin:${env:PATH}"
+        }
+      },
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}

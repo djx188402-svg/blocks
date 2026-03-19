@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/wood34_doski_burn",
+    "up": "blocks:blocks/wood34_doski_burn",
+    "north": "blocks:blocks/wood34_doski_burn",
+    "east": "blocks:blocks/wood34_doski_burn",
+    "south": "blocks:blocks/wood34_doski_burn",
+    "west": "blocks:blocks/wood34_doski_burn",
+    "particle": "blocks:blocks/wood34_doski_burn"
+  }
+}

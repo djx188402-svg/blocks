@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/stucco_ceiling_burnt",
+    "up": "blocks:blocks/stucco_ceiling_burnt",
+    "north": "blocks:blocks/stucco_ceiling_burnt",
+    "east": "blocks:blocks/stucco_ceiling_burnt",
+    "south": "blocks:blocks/stucco_ceiling_burnt",
+    "west": "blocks:blocks/stucco_ceiling_burnt",
+    "particle": "blocks:blocks/stucco_ceiling_burnt"
+  }
+}

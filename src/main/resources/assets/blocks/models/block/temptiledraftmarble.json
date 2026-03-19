@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blocks:blocks/temp_tile_draftmarble",
+    "up": "blocks:blocks/temp_tile_draftmarble",
+    "north": "blocks:blocks/temp_tile_draftmarble",
+    "east": "blocks:blocks/temp_tile_draftmarble",
+    "south": "blocks:blocks/temp_tile_draftmarble",
+    "west": "blocks:blocks/temp_tile_draftmarble",
+    "particle": "blocks:blocks/temp_tile_draftmarble"
+  }
+}
