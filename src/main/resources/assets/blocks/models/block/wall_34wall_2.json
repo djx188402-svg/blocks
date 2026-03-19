@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "blocks:blocks/wall34_wall_1",
-    "up": "blocks:blocks/wall34_wall_1",
-    "north": "blocks:blocks/wall34_wall_1",
-    "east": "blocks:blocks/wall34_wall_1",
-    "south": "blocks:blocks/wall34_wall_1",
-    "west": "blocks:blocks/wall34_wall_1",
-    "particle": "blocks:blocks/wall34_wall_1"
+    "down": "blocks:blocks/wall34_wall_2",
+    "up": "blocks:blocks/wall34_wall_2",
+    "north": "blocks:blocks/wall34_wall_2",
+    "east": "blocks:blocks/wall34_wall_2",
+    "south": "blocks:blocks/wall34_wall_2",
+    "west": "blocks:blocks/wall34_wall_2",
+    "particle": "blocks:blocks/wall34_wall_2"
   }
 }
